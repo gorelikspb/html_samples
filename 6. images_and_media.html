@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>4. Images</title>
+</head>
+
+<body>
+
+
+    <p><img src="https://www.w3resource.com/images/layout.gif" alt="html img tag example"></p>
+
+    <p><img src="https://www.w3resource.com/images/layout.gif" width="200" height="300"></p>
+
+    This image has <code>longdesc</code> attr, not supported by browsers:
+    <img src="https://www.w3resource.com/images/w3resource-logo.png" longdesc="w3r.txt">
+
+
+    <p>
+        <video width="320" height="200" controls preload="auto" autoplay loop
+            poster="https://www.w3resource.com/images/w3resourcelogo.gif">
+            <source src="http://www.w3resource.c
+            om/html-css-
+            exercise/basic/solution/php-
+            demo1.mp4" type="video/mp4">
+            <source src="http://www.w3resource.
+            com/html-css-
+            exercise/basic/solution/php-
+            demo1.ogg" type="video/ogg">
+
+        </video>
+    </p>
+
+    <p>Figure caption example:</p>
+    <figure margin=0>
+        <img src="https://www.w3resource.com/images/w3logo6.png">
+        <!-- alt="w3resource Logo" width="149" height="52" /> -->
+        <figcaption>Official Logo of w3resource.com</figcaption>
+    </figure>
+
+
+
+    <img src="https://www.w3resource.com/html/area/html-area-element.png" alt="area example " width="308" height="190"
+        border="0" usemap="#Map">
+
+    <map name="Map">
+        <area shape="rect" coords="8,5,100,77" href="https://www.w3resource.com/mysql/mysql-tutorials.php"
+            target="_blank" alt="mysql tutorial">
+        <area shape="circle" coords="155,93,59" href="https://www.w3resource.com/php/php-home.php" target="_blank"
+            alt="php tutorial">
+        <area shape="rect" coords="197,136,306,188" href="https://www.w3resource.com/sql/sql-tutorials.php"
+            alt="sql tutorials">
+    </map>
+
+    <p>
+        Audio controls example:
+    </p>
+    <audio controls autoplay loop preload="auto">
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.mp3" type="audio/mpeg">
+    </audio>
+    <p> (autoplay is on but not working in Chrome)
+    </p>
+    <p>muted one:</p>
+    <audio controls muted>
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <p>
+        <object data="https://www.w3resource.com/html-
+css-exercise/basic/solution/
+beach.wav">
+            <param name="autoplay" value="true">
+        </object>
+    </p>
+    <hr>
+    <p id="bottom">
+        <a href="#top">To the top</a>
+    </p>
+
+    <style>
+        #FirstCanvas {
+            width: 300px;
+            height: 150px;
+            border: 15px solid goldenrod;
+            background-color: steelblue;
+        }
+    </style>
+    <hr>
+
+    <p>
+    <p>Canvas example: </p>
+    <canvas id="FirstCanvas"></canvas>
+    </p>
+
+
+
+</body>
+
+</html>

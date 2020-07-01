@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <form width=10%>
+        <p>Related elements grouped with <code>fieldset</code> tag</p>
+        <fieldset>
+            Name: <input type="text" size="30" /><br /><br />
+            Email: <input type="text" size="30" /><br /><br />
+        </fieldset>
+        <br>
+        <fieldset>
+            Place: <input type="text" size="10" /><br /><br />
+            Comment: <input type="text" size="30" /><br /><br />
+        </fieldset>
+        <p>
+            Outside fieldset: <input type="text" size="30" /><br /><br /></p>
+    </form>
+    <hr>
+    <p>Pre-defined list example (try to open):</p>
+    <input list="Languages" />
+    <datalist id="Languages">
+        <option value="PHP">
+        <option value="ASP">
+        <option value="Python">
+        <option value="Ruby">
+        <option value="Java">
+    </datalist>
+
+    <hr>
+    <p>Label, select, optgroup, option, option disabling example:</p>
+    <form>
+        <label>Hardware</label>
+        <select>
+            <optgroup label="Computer 
+        Monitors">
+                <option value="crt" disabled>CRT</option>
+                <option value="lcd">LCD</option>
+                <option value="led">LED</option>
+            </optgroup>
+            <optgroup label="Computer 
+        Printers" disabled>
+                <option value="dot-matrix">Dot-
+                    Matrix</option>
+                <option value="ink-jet">Ink-
+                    jet</option>
+                <option value="laser">Laser</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <hr>
+    <br>
+    <form oninput="w3resource.value=parseInt
+        (input.value)+parseInt
+        (output.value)">0
+        <input type="range" id="input" value="100">100
+        +<input type="number" id="output" value="10">
+        =<output name="w3resource" for="input output"></output>
+    </form>
+
+    <br><br>
+
+    <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/select-
+form-answer-demo.php" id="form1">
+        First name: <input type="text" name="fname">
+        <input type="submit">
+    </form>
+    <br>
+    This <code>select</code> outside the form above, <br>
+    but belongs to it with form name
+    <select name="languages" form="form1">
+        <option value="PHP">PHP</option>
+        <option value="ASP">ASP</option>
+        <option value="Ruby">Ruby on Rails </option>
+    </select>
+
+    <p>Multiple select example (size = 2):<br>
+        <select name="animal" multiple size=2>
+            <option value="Lion">Lion</option>
+            <option value="Tiger">Tiger</option>
+            <option value="Elephant">Elephant</option>
+        </select>
+
+    <p>
+
+        <!-- <form method="post" action="https://www.w3resource.com/html-css-
+        exercise/basic/solution/select-
+        required-answer-demo.php">
+        <select name="animals" required>
+            <option value="">None</option>
+            <option value="lion">Lion</option>
+            <option value="tiger">Tiger</option>
+            <option value="elephant">Elephant</option>
+        </select>
+        <input type="submit">
+    </form> -->
+
+    <p>
+    <form name="example_ form" method="POST" action="input-answer-
+demo.php">
+        <fieldset>
+            <legend>Cariculam-vita:</legend>
+            Name (autofocused on load): <input type="text" name="name" size="30" autofocus autocomplete="off"> <br><br>
+            Email: <input type="text" name="email" size="30"> <br><br>
+            Place : <input type="text" name="place" size="10">
+            <input type="submit" value="Submit">
+        </fieldset>
+
+    </form>
+    </p>
+
+    <hr>
+    <p> File input example: </p>
+    <form method="POST" action="https://www.w3resource.com/html-css-
+        exercise/basic/solution/input-accept-
+        demo.php">
+        <input type="file" name="my_image" accept="image/*">
+        <input type="submit">
+    </form>
+
+    <hr>
+    <p>Image buttons example:</p>
+    <p>
+    <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/input-alt-answer-demo.php">
+        Name: <input type="text" name="name" size="30"> <br>
+        <input type="image" src="https://www.w3resource.com/html-css-exercise/basic/solution/input-altimages.jpg"
+            alt="Submit" width="50" height="50">
+
+        <input type="image" src="https://www.w3resource.com/html-css-exercise/basic/solution/input-altimages.jpg"
+            alt="Submit" width="15%" height="90">
+    </form>
+    </p>
+
+    <hr>
+    Input boxes example:
+    <p>
+    <form method="POST" action="https://www.w3resource.com/html-css-
+        exercise/basic/solution/input-checked-answer-demo.php">
+        <input type="checkbox" name="device[]" value="Laptop"> I have a Laptop<br>
+        <input type="radio" name="device[]" value="Printer" checked> I have a Printer<br>
+        <input type="radio" name="device[]" value="Dream" checked> I have a Dream<br>
+        <br>
+        Disabled field: <input type="text" email="email" disabled>
+        <br><br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <hr>
+    <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/input-form-answer-demo.php"
+        id="form1">
+        First name <b>(have a hint here)</b>: <input type="text" name="fname" placeholder="Full Name"><br>
+        <input type="submit" value="Submit">
+    </form><br>
+    <p>The "Address" field below is outside the form element, but still part of the form.</p>
+    Address: <input type="text" name="address" form="form1">
+    </p>
+    <hr>
+    <p>
+    <form method="post" action="http://wwww.w3resource.com/html-css-
+exercise/basic/solution/input-list-answer-
+demo.php">
+        Predefined datalist: <input list="animal" name="animal">
+        <datalist id="animal">
+            <option value="Lion">
+            <option value="Tiger">
+            <option value="Elephant">
+        </datalist>
+        <br><br>
+        <b>Range-resctricted values</b><br><br>
+        <i>try to enter outranged and submit</i><br><br>
+        Enter a date after 2010-01-01:
+        <input type="date" name="day_after" min="2010-01-02"><br><br>
+        Quantity (between 1 and 5):
+        <input type="number" name="quantity" min="1" max="5"><br>
+        Name (<b>5 symbols length restricted</b>): <input type="text" name="name" maxlength="5"><br>
+        <br>
+        Select <b>multiple</b> images: <input type="file" name="my_image" multiple>
+        <br> <br>
+        <b>regexp validation</b> Pin code: <input type="text" name="pin_code" pattern="[0-9]{6}"
+            title="six number pin code">
+        <br> <br>
+        <b>readonly input</b> Place: <input type="text" name="place" value="Delhi" readonly>
+        <br> <br>
+        <b>required input</b> Telephone No: <input type="number" name="phone_no" required>
+        <br> <br>
+        <b>Symbol-sized field (10) </b>Password: <input type="text" name="password" size="10">
+        <br><br>
+        <b></b>Number arrow-input with intervals (3): <input type="number" name="points" step="3">
+        <br><br>
+        Controls with labels:<br>
+        <label for="yes">Yes</label>
+        <input type="radio" name="answer" value="yes" checked><br>
+        <label for="no">No</label>
+        <input type="radio" name="answer" value="no"><br>
+        <input type="submit">
+    </form>
+
+    <br>
+    <textarea rows="4" cols="40">
+        Multiline input control: w3resource is a free, open-source 
+        tutorial.you will learn with HTML5 
+        tutorial of w3resource.
+    </textarea>
+
+
+
+</body>
+
+</html>

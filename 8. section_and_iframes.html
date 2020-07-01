@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <hr>
+
+    <hr>
+
+    <hr>
+    <!-- <dialog open>This is an open dialog window</dialog> -->
+
+    <hr>
+
+
+    <header>
+        <h1>Example of HTML5 header element</h1>
+        <p>header element is the head of a new section.
+            It may contain : </p>
+        <ul>
+            <li>h1-h6</li>
+            <li>hggroup <i>(excluded from W3C HTML)</i></li>
+            <li>Table of content</li>
+            <li>Search Form</li>
+            <li>Logos</li>
+        </ul>
+    </header>
+
+    <footer> Footer example. <code>footer</code> tag serves for logical division for semantical reasons,
+        presentation can be modified via CSS, just like with div class named <q>footer</q> </footer>
+
+
+   
+
+    <p>iframe examples:</p>
+
+    <iframe src="https://www.w3resource.com/html-css-exercise/basic/solution/code-em-answer.html" width="70%"
+        height="100">
+        text here
+    </iframe>
+
+    <p>Click on link right to this iframe to target link to the iframe:</p>
+    <iframe name="iframe_a">
+    </iframe>
+    <a href="https://www.w3resource.com/html-css-exercise/basic/solution/article-answer.html"
+        target="iframe_a">w3resource</a>
+    </iframe>
+    <p><b>Note:</b> Because the target of the link matches the name of the iframe, the link will open in the iframe.</p>
+
+    Script button works in this iframe (scroll down and click):
+    <p>
+        <iframe src="https://www.w3resource.com/html-css-exercise/basic/solution/iframe-sandbox.html">
+        </iframe>
+    </p>
+    <p>... but not further, cause the iframe <code>sandbox</code>ed:</p>
+    <p>
+        <iframe src="https://www.w3resource.com/html-css-exercise/basic/solution/iframe-sandbox.html" sandbox>
+        </iframe>
+    </p>
+    <p>This iframe has <code>src</code> attribute, but ignoring it, cause
+    </p>
+    <iframe srcdoc="<p> <code>srcdoc</code> tag content have priority</p>"
+        src="https://www.w3resource.com/html-css-exercise/basic/solution/html-answer.html">
+    </iframe>
+
+    <p>This iframe has 150% width:</p>
+    <iframe src="https://www.w3resource.com/html-css-exercise/basic/solution/em-answer.html" width="150%" hight="60">
+    </iframe>
+
+
+
+</body>
+
+</html>
