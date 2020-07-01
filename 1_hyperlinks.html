@@ -4,6 +4,15 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Samples</title>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src = "jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+
 </head>
 
 <body>
@@ -56,8 +65,17 @@
 
     <hr>
 
-    
 
+
+
+    <div id="footer"></div>
+
+    <!-- <div id=`targetid`>
+    </div>
+
+    <script>
+        $(`#targetid`).load(`footer.html`);
+    </script> -->
 
 </body>
 
